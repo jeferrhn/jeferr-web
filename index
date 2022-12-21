@@ -1,0 +1,201 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width?device-width,initial-scale=1.0">
+        <title>Redes Sociales de Jeferrr_HN</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="logo.jpeg">
+        
+    </head>
+    <body>
+    <!––contenedor genral––>
+            <div id="general">
+    <!––contenedor de imagenes cambiantes ––>
+            <div class="slider">
+                <ul>
+                    <li><img src="lago.jpg" alt=""></li>
+                    <li><img src="teclado.jpg" alt=""></li>
+                    <li><img src="paisaje.jpg" alt=""></li>
+                    <li><img src="mando.jpg" alt=""></li>
+                </ul>
+            </div>
+    <!––contenedor de perfil––>
+            <div id="perfil">
+            <img src="perfil1.png" alt="">
+            </div>
+    <!––contenedor de perfil––>
+            <div id="circulo">
+            <img src="perfil1.png" alt="">
+            </div>       
+    <!––contenedor de texto––>
+            <div id="texto">
+                <centro><h1>Mis resdes sociales: </h1></centro>
+             
+            </div>
+    <!––contenedor de iconos redes––>
+            <div id="iconos">
+                <a href="https://discord.gg/QE8wSnZtXJ"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.instagram.com/admin.jeferr/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@jeferrhnyt"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100036530103636"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.twitch.tv/jeferr_hn"><i class="fa-brands fa-twitch"></i></a>
+                <a href="https://www.youtube.com/channel/UCH7stBhAWbQDO8By706gw1A"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://twitter.com/anonimo_H50"> <i class="fa-brands fa-twitter"></i></a>    
+            </div>
+    <!––contenedor de creditos––>
+            <div id="credito">
+                <h2>Creador: Jeferson Martinez</h2>
+            </div>
+            </div>
+        
+    </body>
+ </html> 
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+div#general{
+    margin: auto;
+    margin-top: 0px;
+    width: 1263px;
+    height: 1000px;
+    /*background: #af2929;*/
+    position: relative;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+}
+/*contenedor de esto es la posicion de foto de perfil*/
+div#perfil{
+    margin: auto;
+    margin-top: 0px;
+    width: 485px;
+    height: 485px;
+    text-align: center;
+    position: absolute;
+    left: 30%;
+    /*background-color: aqua;*/
+   
+}
+/*contenedor de los iconos de redes */
+div#iconos{
+    margin: auto;
+    margin-top: 60px;
+    width: 1260px;
+    height: 170px;
+    /*background-color: rgb(29, 41, 41);*/
+    position: absolute;
+    text-align: center;
+
+}
+.fa-brands {
+    color: #ffffff;
+    font-size: 50px;
+    margin: 60px;
+    position: center; 
+}
+/*contenedor de estos es el texto de redes sociales*/
+div#texto{
+    margin: auto;
+    margin-top: 0px;
+    width: 1250px;
+    height: 60px;
+    /*background-color: rgb(107, 146, 146);*/
+    position: absolute;
+    text-align: center;
+}
+h1{
+    font-size: 60px;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+}
+
+/*contenedor de creador jeferr*/
+div#credito{
+    margin: auto;
+    margin-top: 40px;
+    width: 1250px;
+    height: 50px;
+    position: absolute;
+    top: 670px;
+
+
+}
+h2{
+    font-size: 20px;
+    text-align: left;
+    position: relative;
+    color: #ffffff; 
+    /*background-color: rgb(41, 139, 139);*/
+}
+.circulo{
+    width: 20px;
+    height: 20px;
+    /*background-color: black;*/
+    border-radius: absolute;
+    left: 30px;
+    top: 0;
+}
+/*fondo cambiante*/
+div#slider{
+    margin: auto;
+    margin-top: 2px;
+    width: 1263px;
+    height: 130px;
+    left: 0px;
+}
+.slider {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0;
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 30s infinite alternate;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+    width: 1263px;
+    height: 1000px;
+    /*background-color: rgba(192, 135, 30, 0.73);*/
+    
+}
+@keyframes cambio {
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+
+    75% { margin-left: -300%;}
+    100% { margin-left: -300%;}
+}
+/*esto es el fondo de la pagina
+body { 
+    background:url(teclado.jpg);
+    text-align: center;
+    margin: auto;
+    width: 95%;
+    margin: auto;
+}*/
+
